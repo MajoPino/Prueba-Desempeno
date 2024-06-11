@@ -20,7 +20,10 @@ const main = document.querySelector('main')
 const btnLogOut = document.getElementById('btn-log-out')
 const tbody = document.querySelector('tbody')
 const form = document.querySelector('form')
-
+const place = document.getElementById('place')
+const date = document.getElementById('date')
+const price = document.getElementById('price')
+const image = document.getElementById('image')
 
 /* Defining the variables for the endpoints */
 let flightData = "http://localhost:3000/flights"
