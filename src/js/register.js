@@ -21,9 +21,14 @@ const confirmPassword = document.getElementById('password2')
 /* Defining the variable for the endpoint */
 const userData = "http://localhost:3000/users"
 
-/* Calling the header component for it to be printed */
-Header(header)
+/* Fix the routing variants for the header component */
+const login = "../pages/login.html"
+const signup = "./register.html"
 
+/* Calling the header component for it to be printed */
+Header(header, login, signup)
+
+/* Making the 'submit' event */
 form.addEventListener('submit', async (event) => {
     event.preventDefault()
     const checkedEmail = await emailCheck(email)

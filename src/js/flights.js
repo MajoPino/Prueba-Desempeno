@@ -8,9 +8,11 @@ Tuesday June/11/2024 */
 import '../scss/styles.scss'
 // Import Bootstrap JS
 import * as bootstrap from 'bootstrap'
+//Import Sweetalert
+import Swal from 'sweetalert2'
 
 /* import our header component*/
-import { Header } from './components'
+import { secondHeader } from "./components";
 
 /* Get elements from the document */
 const header = document.querySelector('header')
@@ -20,16 +22,16 @@ const main = document.querySelector('main')
 let flightData = "http://localhost:3000/flights"
 
 /* Fix the routing variants for the header component */
-let login = "./src/pages/login.html"
-let signup = "src/auth/register.html"
+let anchorFlights = "./flights.html"
+let anchorBooking = "./booking.html"
 
 /* Calling the components for them to be printed */
-Header(header, login, signup)
-await Flights()
+secondHeader(header, anchorFlights, anchorBooking)
+await allFlights()
 
 
-/* Async function that will print the available flights */
-async function Flights() {
+
+async function allFlights() {
     let response = await fetch(flightData)
     let flights = await response.json()
   
@@ -50,3 +52,7 @@ async function Flights() {
         
         `});
   }
+
+main.addEventListener('target', (event) => {
+    
+})

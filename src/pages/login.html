@@ -26,11 +26,28 @@ Tuesday June/11/2024 -->
     <title>FlightApp Login</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+        <a href="./flights.html"></a>
+    </header>
+    <main>
+        <section>
+            <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Make sure the password is well written.">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="../auth/register.html" class="color-primary text-decoration-none">Not registered? Sign up!</a>
+              </form>
+        </section>
+    </main>
     <footer></footer>
 
     <!-- Linking the main.js file -->
-    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="../js/login.js"></script>
   </body>
 </html>
