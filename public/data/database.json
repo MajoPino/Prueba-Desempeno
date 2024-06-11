@@ -55,5 +55,20 @@
       "id": "08d5"
     }
   ],
-  "booking": []
+  "booking": [
+    {
+      "place": "London",
+      "date": "2024/07/05/20:00",
+      "price": "$60.000",
+      "image": "https://www.iese.edu/es/insight/wp-content/uploads/sites/4/2022/11/Londres-Cities-in-motion-1024-alto.jpg",
+      "id": "08d5"
+    },
+    {
+      "place": "Punta Cana",
+      "date": "2024/06/14/16:00",
+      "price": "$70.000",
+      "image": "https://media.staticontent.com/media/pictures/83239c0a-50e5-44c5-bbb2-bea8292543e4",
+      "id": "cc8a"
+    }
+  ]
 }
