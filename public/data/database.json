@@ -1,0 +1,35 @@
+{
+    "role": [
+        {
+            "id": 1,
+            "name": "admin"
+        },
+        {
+            "id": 2,
+            "name": "user"
+        }
+    ],
+
+    "users": [
+        {
+            "id": 0,
+            "name": "Mariajose",
+            "email": "majo12pino@gmail.com",
+            "birthDate": "2005/04/13",
+            "password": "1234",
+            "roleId": 1
+        },
+        {
+            "id": 1,
+            "name": "Eren",
+            "email": "erenjaeger@gmail.com",
+            "birthDate": "2004/03/30",
+            "password": "2345",
+            "roleId": 2
+        }
+    ],
+
+    "booking": [
+
+    ]
+}
